@@ -1,0 +1,15 @@
+    <%- include('partials/header'); -%>
+    <h1>home</h1>
+      <%= hy %>
+    <%  arr.forEach(function(pot){ %>
+        <h1><%= pot.title  %></h1>
+        <p>
+          <% var trunk = pot.post.slice(0,100) %>4
+          <% var dot =trunk + "...."  %>
+          <%= dot %>
+          <a href="/test/<%= pot.title %>">here</a>
+          </p>
+          <br />
+            <%  }) %>
+
+      <%- include('partials/footer'); -%>
